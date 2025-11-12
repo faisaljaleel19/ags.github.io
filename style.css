@@ -42,7 +42,6 @@
     ==========================*/
     @media (hover:hover) and (pointer:fine) {
   body { cursor: none; }
-
   .sv-cursor {
     position: fixed;
     top: 0; left: 0;
@@ -160,6 +159,7 @@
 #mobileMenu {
   background: linear-gradient(180deg, #050E20 0%, #0A1D3A 60%, #0C2345 100%);
   color: #fff;
+  height: 100vh;
 }
 
 /* Header */
