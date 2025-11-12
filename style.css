@@ -254,6 +254,26 @@
     .hero h1{ font-size: clamp(2rem, 5vw, 3.75rem); }
     .hero p{ color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.25rem); }
 
+    .hero .badge{ white-space: normal; }
+
+    .hero .content,
+    .hero h1,
+    .hero p,
+    .hero .badge {
+    overflow-wrap: anywhere;
+    }
+
+
+    @media (max-width: 576px) {
+    .hero { height: 85svh; padding-inline: 12px; }
+    .hero .content { max-width: 92vw; }
+    .hero h1 { font-size: clamp(1.5rem, 7vw, 2.25rem); }
+    .hero p { font-size: clamp(.95rem, 3.8vw, 1.05rem); margin-bottom: 1rem; }
+    .hero .badge { font-size: .75rem; padding: .35rem .6rem; }
+
+    .hero h1 br { display: none; }
+    }
+
 
     .expect-card {
     background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
