@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SecureVision — Security Services</title>
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper (CSS/JS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="sv-cursor" id="svCursor" aria-hidden="true"></div>
+
+  <!-- =========================
+       NAVBAR
+  ==========================-->
+  <nav class="navbar navbar-dark">
+    <div class="container">
+
+      <!-- LEFT -->
+      <a class="navbar-brand" href="#home">
+        <!-- <i class="bi bi-shield-lock-fill me-1"></i> SecureVision -->
+         <img src="./images/LOGO-AGS.webp" class="img-fluid w-50 ags-logo"/>
+      </a>
+
+      <!-- CENTER (Desktop only) -->
+      <div class="nav-center d-none d-lg-block">
+        <ul class="navbar-nav flex-row align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link top-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" id="servicesMenu">
+            <li><a class="nav-link" href="#">Foot, Bike, and Golf Patrol</a></li>
+            <li><a class="nav-link" href="#">Vehicle Patrol Security Guards</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li><a class="nav-link" href="#">Standing Security Guard</a></li>
+            <li><a class="nav-link" href="#">Unarmed Security Guards</a></li>
+            <li><a class="nav-link" href="#">Armed Security Guards</a></li>
+            <li><a class="nav-link" href="#">Fire Watch Security Guards</a></li>
+            <li><a class="nav-link" href="#">Private Security Guard Services</a></li>
+            <li><a class="nav-link" href="#">Parking Enforcement Services</a></li>
+            <li><a class="nav-link" href="#">Traffic Control Security Services</a></li>
+          </ul>
+        </li>
+          <!-- Solutions -> Tabbed dropdown -->
+          <li class="nav-item dropdown px-1" data-bs-auto-close="outside">
+            <a class="nav-link dropdown-toggle top-link" href="#" data-bs-toggle="dropdown">Industries</a>
+            <div class="dropdown-menu p-3">
+              <!-- Tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-commercial" type="button" role="tab">Commercial</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-industrial" type="button" role="tab">Industrial</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-others" type="button" role="tab">Others</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-residential" type="button" role="tab">Residential</button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content mt-3">
+                <div id="tab-commercial" class="tab-pane fade show active" role="tabpanel">
+                  <ul>
+                    <li><a href="#">Commercial Security Services</a></li>
+                    <li><a href="#">Government Facility Security</a></li>
+                    <li><a href="#">High Rise Building Security</a></li>
+                    <li><a href="#">Reception & Lobby Desk Area Security</a></li>
+                    <li><a href="#">Shopping Center Security</a></li>
+                    <li><a href="#">SPA Facilities Security</a></li>
+                    <li><a href="#">Telecom Facilities Security</a></li>
+                    <li><a href="#">Data Centers And Tech Companies Security</a></li>
+                    <li><a href="#">Dispensary Security Services</a></li>
+                    <li><a href="#">Healthcare and Hospital Security</a></li>
+                    <li><a href="#">Financial Institution Security</a></li>
+                  </ul>
+                </div>
+
+                <div id="tab-industrial" class="tab-pane fade" role="tabpanel">
+                  <ul>
+                    <li><a href="#">Construction Site Security Services</a></li>
+                    <li><a href="#">Industrial Security Services</a></li>
+                    <li><a href="#">Docks and Marina Security</a></li>
+                    <li><a href="#">Manufacturing Plant Security</a></li>
+                    <li><a href="#">Parking Lot Security</a></li>
+                    <li><a href="#">Research Facilities</a></li>
+                    <li><a href="#">Solar Farm Security</a></li>
+                    <li><a href="#">Transporation, Logistics Security</a></li>
+                    <li><a href="#">Pharmaceutical Manufacturing Facilities Security</a></li>
+                    <li><a href="#">Equipment And Materials Security Services</a></li>
+                  </ul>
+                </div>
+                <div id="tab-others" class="tab-pane fade" role="tabpanel">
+                  <ul>
+                    <li><a href="#">Auto Dealership Security</a></li>
+                    <li><a href="#">Cemetery Security Services</a></li>
+                    <li><a href="#">Cultural Properties Security</a></li>
+                    <li><a href="#">Events Security Services</a></li>
+                    <li><a href="#">Concert Security Services</a></li>
+                    <li><a href="#">Entertainment Security Services</a></li>
+                    <li><a href="#">Public Spaces Security</a></li>
+                    <li><a href="#">Tournament & Sport Event Security</a></li>
+                    <li><a href="#">Utility Agency Security</a></li>
+                    <li><a href="#">Warehouse Security</a></li>
+                    <li><a href="#">Train Stations and Bus Terminal Security</a></li>
+                    <li><a href="#">Farms And Agricultural Properties Security</a></li>
+                    <li><a href="#">Houses of Worship Security</a></li>
+
+                  </ul>
+                </div>
+                <div id="tab-residential" class="tab-pane fade" role="tabpanel">
+                  <ul>
+                    <li><a href="#">Residential Security Guard Services</a></li>
+                    <li><a href="#">Apartments and Condominium Security</a></li>
+                    <li><a href="#">Assisted Living Security</a></li>
+                    <li><a href="#">Gated Community and HOA Security</a></li>
+                    <li><a href="#">Private Home Security Services</a></li>
+                    <li><a href="#">Vacant Properties Security Services</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item px-1"><a class="nav-link top-link" href="#services">Service Areas</a></li>
+          <li class="nav-item px-1"><a class="nav-link top-link" href="#about">Company</a></li>
+          <li class="nav-item px-1"><a class="nav-link top-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <a href="#contact" class="btn btn-sm btn-accent rounded-pill px-3 py-2 d-none d-lg-inline-flex">Get Quote</a>
+        <button class="navbar-toggler d-lg-none" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel" data-bs-backdrop="static">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">
+        <img src="./images/LOGO-AGS.webp" class="img-fluid w-50 ags-logo"/>
+    </h5>
+    <button type="button" class="btn-close btn-close-white" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <div class="accordion" id="mobileMenuAcc">
+
+      <!-- Services (matches desktop list) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="mob-services-h">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mob-services" aria-expanded="false" aria-controls="mob-services">
+            Services
+          </button>
+        </h2>
+        <div id="mob-services" class="accordion-collapse collapse show" aria-labelledby="mob-services-h" data-bs-parent="#mobileMenuAcc">
+          <div class="accordion-body p-0">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Foot, Bike, and Golf Patrol</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Vehicle Patrol Security Guards</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Standing Security Guard</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Unarmed Security Guards</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Armed Security Guards</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Fire Watch Security Guards</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Private Security Guard Services</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Parking Enforcement Services</a></li>
+              <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Traffic Control Security Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries (desktop tabs → mobile accordion) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="mob-industries-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mob-industries" aria-expanded="false" aria-controls="mob-industries">
+            Industries
+          </button>
+        </h2>
+        <div id="mob-industries" class="accordion-collapse collapse" aria-labelledby="mob-industries-h" data-bs-parent="#mobileMenuAcc">
+          <div class="accordion-body p-0">
+
+            <div class="accordion" id="mobIndustriesInner">
+
+              <!-- Commercial -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="mob-ind-com-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mob-ind-com" aria-expanded="false" aria-controls="mob-ind-com">
+                    Commercial
+                  </button>
+                </h2>
+                <div id="mob-ind-com" class="accordion-collapse collapse" aria-labelledby="mob-ind-com-h" data-bs-parent="#mobIndustriesInner">
+                  <div class="accordion-body p-0">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Commercial Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Government Facility Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">High Rise Building Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Reception &amp; Lobby Desk Area Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Shopping Center Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">SPA Facilities Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Telecom Facilities Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Data Centers And Tech Companies Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Dispensary Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Healthcare and Hospital Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Financial Institution Security</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Industrial -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="mob-ind-ind-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mob-ind-ind" aria-expanded="false" aria-controls="mob-ind-ind">
+                    Industrial
+                  </button>
+                </h2>
+                <div id="mob-ind-ind" class="accordion-collapse collapse" aria-labelledby="mob-ind-ind-h" data-bs-parent="#mobIndustriesInner">
+                  <div class="accordion-body p-0">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Construction Site Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Industrial Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Docks and Marina Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Manufacturing Plant Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Parking Lot Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Research Facilities</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Solar Farm Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Transporation, Logistics Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Pharmaceutical Manufacturing Facilities Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Equipment And Materials Security Services</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Others -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="mob-ind-oth-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mob-ind-oth" aria-expanded="false" aria-controls="mob-ind-oth">
+                    Others
+                  </button>
+                </h2>
+                <div id="mob-ind-oth" class="accordion-collapse collapse" aria-labelledby="mob-ind-oth-h" data-bs-parent="#mobIndustriesInner">
+                  <div class="accordion-body p-0">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Auto Dealership Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Cemetery Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Cultural Properties Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Events Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Concert Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Entertainment Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Public Spaces Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Tournament &amp; Sport Event Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Utility Agency Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Warehouse Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Train Stations and Bus Terminal Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Farms And Agricultural Properties Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Houses of Worship Security</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Residential -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="mob-ind-res-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mob-ind-res" aria-expanded="false" aria-controls="mob-ind-res">
+                    Residential
+                  </button>
+                </h2>
+                <div id="mob-ind-res" class="accordion-collapse collapse" aria-labelledby="mob-ind-res-h" data-bs-parent="#mobIndustriesInner">
+                  <div class="accordion-body p-0">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Residential Security Guard Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Apartments and Condominium Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Assisted Living Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Gated Community and HOA Security</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Private Home Security Services</a></li>
+                      <li class="list-group-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">Vacant Properties Security Services</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /inner accordion -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple links matching desktop -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Service Areas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+        <li class="nav-item mt-2">
+          <a href="#contact" class="btn btn-primary w-100" data-bs-dismiss="offcanvas">Get Quote</a>
+        </li>
+      </ul>
+
+    </div><!-- /accordion -->
+  </div><!-- /offcanvas-body -->
+</div>
+  <!-- =========================
+       HERO
+  ==========================-->
+  <header class="hero" id="home">
+    <video autoplay muted loop playsinline
+           poster="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1600">
+      <source src="videoplayback.webm" type="video/webm">
+    </video>
+    <div class="content">
+      <span class="badge rounded-pill px-3 py-2 mb-3" style="background:rgba(15,98,254,.18); border:1px solid rgba(15,98,254,.35); color:#CFE0FF;">
+        <i class="bi bi-shield-check me-1"></i> DISCOVER WHAT AMERICAN GLOBAL SECURITY CAN DO FOR YOU!
+      </span>
+      <h1 class="fw-bold mb-2">Security Guard Company<br/> Los Angeles, California</h1>
+      <p class="mb-4">Unmatched Security Guard Services For All Businesses Throughout California</p>
+      <div class="d-flex gap-2 justify-content-center">
+        <button type="button" class="btn btn-accent px-4 py-2" data-bs-toggle="modal" data-bs-target="#quoteModal">Request a Quote</button>
+        <a href="#cases" class="btn btn-outline-light px-4 py-2">See Results</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- Image side -->
+      <div class="col-lg-6">
+        <div class="position-relative rounded-4 overflow-hidden shadow soft-card">
+          <div class="ratio ratio-4x3 bg-cover"
+               style="background-image:url('./images/Hire-Mobile-Patrol-Security-Services-in-Sacramento.webp'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+          </div>
+          <span class="position-absolute top-0 start-0 m-3 badge bg-warning text-dark">
+            TOP RANKED • LOS ANGELES
+          </span>
+          <div class="position-absolute bottom-0 start-0 m-3 bg-dark bg-opacity-75 px-3 py-2 rounded-3">
+            <i class="bi bi-shield-check me-1 text-warning"></i>
+            Security guard standing with American Global Patrol Vehicle
+          </div>
+        </div>
+      </div>
+
+      <!-- Content side -->
+      <div class="col-lg-6">
+        <span class="badge bg-dark border text-warning mb-2">45+ Years of Experience</span>
+        <h2 class="mb-3">Top-Ranked Security Guard Services in Los Angeles</h2>
+
+        <p class="text-secondary mb-3">
+          With 45+ years of experience, American Global Security is a trusted security guard company in Los Angeles.
+          We assess your requirements and match you with expert, highly trained guards—delivering tailored solutions
+          you can rely on across California.
+        </p>
+
+        <div class="row g-2 mb-3">
+          <div class="col-12">
+            <div class="small text-secondary">
+              <i class="bi bi-check-circle text-warning me-2"></i>
+              Residential, Commercial, Construction, Healthcare, Retail, Warehouses, Government, Events
+            </div>
+            <div class="small text-secondary">
+              <i class="bi bi-check-circle text-warning me-2"></i>
+              Armed/Unarmed Guards • Mobile Patrols • Fire Watch • Emergency Response
+            </div>
+            <div class="small text-secondary">
+              <i class="bi bi-check-circle text-warning me-2"></i>
+              Real-time Reporting • GPS Tracking • 24/7 Operations
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-4 soft-card mb-3">
+          <h5 class="mb-2">What Makes Our LA Team Unmatched</h5>
+          <ul class="mb-0 text-secondary ps-3">
+            <li>Client safety first: dependable, 24/7 protection with tailored approaches.</li>
+            <li>Extensive training in threat assessment, emergency response, and customer service.</li>
+            <li>Modern tools (reports, GPS) + classic integrity and vigilance.</li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#contact" class="btn btn-warning text-dark fw-semibold">
+            Get a Free Quote
+          </a>
+          <a href="#services" class="btn btn-outline-light">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" style="background: linear-gradient(180deg, var(--bg), var(--bg2));">
+<div class="container py-5 expect-grid text-light">
+  <h2 class="mb-5 text-center fw-bold">What Our Clients Can Expect?</h2>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="expect-card p-4 text-center h-100">
+        <div class="icon-wrap mb-3"><i class="bi bi-lightbulb"></i></div>
+        <p class="fs-5 mb-0">Valuable Insights and Customized Solutions</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="expect-card p-4 text-center h-100">
+        <div class="icon-wrap mb-3"><i class="bi bi-person-hearts"></i></div>
+        <p class="fs-5 mb-0">Personalized Service, Excellent Outcome and Service</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="expect-card p-4 text-center h-100">
+        <div class="icon-wrap mb-3"><i class="bi bi-geo-alt"></i></div>
+        <p class="fs-5 mb-0">Dedication to each Security Location</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="expect-card p-4 text-center h-100">
+        <div class="icon-wrap mb-3"><i class="bi bi-shield-check"></i></div>
+        <p class="fs-5 mb-0">Highly Trained Security Guards</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="expect-card p-4 text-center h-100">
+        <div class="icon-wrap mb-3"><i class="bi bi-search"></i></div>
+        <p class="fs-5 mb-0">Risk and Vulnerability Assessment</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+  <!-- =========================
+       SERVICES
+  ==========================-->
+<section class="sv-services container py-5">
+  <div class="text-center mb-2">
+    <span class="sv-pill">What We Offer</span>
+  </div>
+  <h2 class="text-center fw-bold mb-3">Our Security Guard Services</h2>
+  <p class="text-center sv-muted mx-auto" style="max-width: 880px;">
+    We help you focus on your family and business while we safeguard your people, property, and reputation.
+    Every engagement starts with a complimentary on-site evaluation and a plan tailored to your risks.
+  </p>
+
+  <div class="row g-4 mt-4">
+    <!-- Unarmed Guard -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/unarmed-security-guards/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Unarmed-Guard.webp"
+               alt="Unarmed Security Guard Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Unarmed Guard</h3>
+          <p class="sv-card-text">Secure a safe environment and surroundings.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Armed Guard -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/armed-security-guards/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Armed-Guard.webp"
+               alt="Armed Security Guard Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Armed Guard</h3>
+          <p class="sv-card-text">Protect and deter criminal activities and prevent theft.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Standing Guard -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/standing-guard/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Standing-Guard.webp"
+               alt="Standing Security Guards Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Standing Guard</h3>
+          <p class="sv-card-text">Monitor and protect property, employees or clients.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Golf Cart Patrol -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/foot-bike-and-golf-cart-patrol/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Golf-Cart-Patrol.webp"
+               alt="Golf Cart Patrol Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Golf Cart Patrol</h3>
+          <p class="sv-card-text">Maintain, patrol and protect a larger property or area.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Patrol Services Division -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/vehicle-patrol-security-guards/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Patrol-Services-Division.webp"
+               alt="Vehicle Patrol Security Guards Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Patrol Services Division</h3>
+          <p class="sv-card-text">Visit multiple areas to ensure safe & secure surroundings.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Fire Watch -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a class="sv-card h-100 d-block" href="https://americanglobalsecurity.com/services/fire-watch-security-guards/">
+        <div class="sv-card-media">
+          <img src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Fire-Watch.webp"
+               alt="Fire Watch Guards Los Angeles" width="100" height="100" loading="lazy">
+        </div>
+        <div class="sv-card-body">
+          <h3 class="sv-card-title">Fire Watch</h3>
+          <p class="sv-card-text">Identify fire hazards and watch for fire in locations at high risk.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a class="sv-btn" href="https://americanglobalsecurity.com/services/">View All Services</a>
+  </div>
+</section>
+
+
+<section class="sv-la container py-5">
+  <!-- Eyebrow + Title -->
+  <div class="text-center mb-4">
+    <div class="sv-eyebrow mx-auto mb-3" aria-hidden="true"></div>
+    <h2 class="fw-bold m-0">Security Guard Company in Los Angeles – California</h2>
+  </div>
+
+  <!-- Intro -->
+  <p class="sv-lead text-center mx-auto">
+    Security Guard Company Los Angeles—Get 24/7 professional Security Guard Services in Los Angeles, CA, to ensure the safety of your people, businesses, and assets. We are a full-service security guard company in Los Angeles, providing security guard services with uniformed,<a href="https://americanglobalsecurity.com/difference-between-armed-and-unarmed-security-guards/"> armed, and unarmed</a> security guards for residential, retail, industrial, and commercial properties. Our services also include advanced protective solutions such as security patrols, loss prevention, fire watch, and executive protection.
+  </p>
+
+  <!-- Two Columns -->
+  <div class="row align-items-center g-4 mt-2">
+    <!-- Image -->
+    <div class="col-lg-6">
+      <figure class="sv-figure m-0">
+        <img
+          src="https://cdn-hgnnl.nitrocdn.com/YGkiZkJkaEiaIKxAeASAcKxQDUAEWNoj/assets/images/optimized/rev-a78c886/americanglobalsecurity.com/wp-content/uploads/2023/04/Design-5-Guards-pic.webp"
+          alt="Security Guard Services in Los Angeles"
+          class="img-fluid sv-img"
+          loading="lazy"
+          width="800" height="578"
+        />
+      </figure>
+    </div>
+
+    <!-- Content -->
+    <div class="col-lg-6">
+      <div class="sv-card p-4">
+        <p class="mb-3">
+          We focus on our client's needs through our professional security guard services in Los Angeles. We acknowledge that every client has unique needs and requires a unique security plan. Our security guards are trained to AGS's highest standards and will be dedicated to following your unique security processes and protocols. We staff your location with guards who understand the unique requirements of your security concerns and vulnerabilities of your security post location.
+        </p>
+        <p class="mb-0">
+          American Global Security's mission is to provide excellent security services throughout California. Our headquarters are located in Los Angeles,&nbsp; Sacramento, and California! We have been in business since 1999, and we have gained many valuable clients across California and have a successful track record, thus maintaining the reputation of being the best security guard company in Los Angeles. We offer custom security solutions that guarantee to meet your requirements. We have served many industries, from residential sites to healthcare industries to construction sites and more!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="sv-divider my-5" aria-hidden="true"></div>
+
+  <!-- Subsection -->
+  <div class="row g-4">
+    <div class="col-lg-12">
+      <h3 class="fw-semibold mb-3">Expert Security Guard Services Company Backed by Experience</h3>
+      <div class="sv-card p-4 h-100">
+        <p class="mb-3">
+          Our experience in various industries ensures that our clients get the best results. We value our clients as trusted and reliable security guard service providers. We understand that in today's economy, everyone is working on a tight budget. Our rates are competitive and affordable for the best service.
+        </p>
+        <p class="mb-0">
+          When it comes to choosing among the top security guard companies in Los Angeles, American Global Security stands out due to its commitment to excellence and client satisfaction. As a premier Los Angeles security company, we understand the unique challenges businesses and residents face in this city. Our security guards services are designed to address these challenges with precision and professionalism. Unlike other <a href="https://americanglobalsecurity.com/industries/private-security-guard-services/">private security</a> companies in Los Angeles, AGS offers tailored security solutions that are both effective and affordable. Our team is adept at creating comprehensive security plans catering to each client's needs, ensuring maximum protection and peace of mind.
+        </p>
+        <div class="sv-cta h-100">
+        <p class="mt-2">
+        If you're looking for a security guard company near you, <a href="tel:8774827343">contact </a>American Global Security today for a <a href="https://americanglobalsecurity.com/get-free-quote/">free quote</a> and <a href="https://americanglobalsecurity.com/security-blog/">discover</a> how our expert security guard services in Los Angeles can protect your people, property, and peace of mind.
+        </p>
+        <div class="mt-3">
+          <a class="sv-btn" href="https://americanglobalsecurity.com/get-free-quote/">Get Free Quote</a>
+          <a class="sv-btn sv-btn-ghost ms-2" href="tel:8774827343">Contact</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+    </div>
+  </div>
+</section>
+
+<section class="sv-trusted container py-5">
+  <div class="text-center mb-2">
+    <span class="sv-pill">Trusted Security Guard Company In LOS ANGELES, CA</span>
+  </div>
+  <p class="sv-sub text-center mx-auto mb-5">
+    More than <strong>45+ Years</strong> in the industry gives us the power to perform every day and every time.
+  </p>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Card 1 -->
+    <div class="col-12 col-md-6 col-lg-2 motion-fade">
+      <div class="sv-card h-100">
+        <div class="sv-icon"><i class="bi bi-hourglass-split"></i></div>
+        <h3 class="sv-title">45+ Years of<br>Experience</h3>
+        <p class="sv-text">
+          Combined management, field experience, & successful track history, we have over 45+ years of expertise in a variety of security protection services.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-md-6 col-lg-2 motion-fade">
+      <div class="sv-card h-100">
+        <div class="sv-icon"><i class="bi bi-shield-check"></i></div>
+        <h3 class="sv-title">State Licensed by BSIS</h3>
+        <p class="sv-text">
+          Our Security Guards are professionally trained with State authorized firearms and essential training to make your choice immediate and hassle-free.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-md-6 col-lg-2 motion-fade">
+      <div class="sv-card h-100">
+        <div class="sv-icon"><i class="bi bi-file-earmark-lock2"></i></div>
+        <h3 class="sv-title">Fully Insured and Bonded</h3>
+        <p class="sv-text">
+          Each service carries an insurance policy that pays up to $1 Million (3,000,000.00) per occurrence in which it covers property damage, bodily injury, etc.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-12 col-md-6 col-lg-2 motion-fade">
+      <div class="sv-card h-100">
+        <div class="sv-icon"><i class="bi bi-clock-history"></i></div>
+        <h3 class="sv-title">24/7/365 Security Service</h3>
+        <p class="sv-text">
+          We prioritize satisfying our clients. Our management team and security services in LA are available around the clock to protect you and your properties.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-12 col-md-6 col-lg-2 motion-fade">
+      <div class="sv-card h-100">
+        <div class="sv-icon"><i class="bi bi-people-fill"></i></div>
+        <h3 class="sv-title">Professional Trained Guards</h3>
+        <p class="sv-text">
+          We provide you with professionally trained, highly qualified, licensed and authorized personnel for your business, community and schools.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container-fluid" style="background: linear-gradient(rgb(10, 29, 58) 0%, rgb(11, 34, 71) 100%)">
+    <div class="sv-industries container py-5">
+  <!-- Heading -->
+  <div class="text-center mb-3">
+    <h2 class="sv-title-xxl motion-fade">Industries we serve</h2>
+  </div>
+
+  <!-- Lead paragraphs (exact text preserved) -->
+  <div class="sv-lead motion-fade">
+    <p>American Global Security provides 24/7 security guard services to a wide range of industries. We have a full range of services to choose from and are equipped to provide a specialized security solution for each industry. Our security guard company can help you overcome any security challenge clearly and efficiently. Unlike other security guard services in Los Angeles, we have well-tailored security solutions for various security-threatening cases that allow us to maintain the security and decorum of the premises.</p>
+
+    <p>You can easily customize any security plan. Get in touch with our security experts and based on the consultancy, we will build an effective and efficient security solution that will ward off or address unwanted troubles. Give AGS a chance to make you and your loved ones feel safe and protected. We have the right knowledge, skill, and experience to handle even the most complicated or challenging security-threatening situations.</p>
+
+    <p>American Global Security has become the most well-renowned security guard company in Los Angeles California. We have built our reputation in the marketplace through our high-quality security solutions and excellent client communication capabilities. Our security guards go through intense security training sessions both in-office and onsite to improve their security skills. We also have different departments for different operations, as well as local offices and dispatch centres in most major cities. This ensures the efficiency and productivity of our service. Get in touch with AGS to start a Free consultation and Quote at 877-482-7343.</p>
+  </div>
+
+  <!-- Grid of industries -->
+  <div class="row g-4 mt-4 justify-content-center">
+    <!-- Card -->
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-buildings"></i></div>
+        <h3 class="sv-card-title">Apartments &amp; Condominiums</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-heart-pulse"></i></div>
+        <h3 class="sv-card-title">Assisted Living &amp; Retirement Homes</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-briefcase"></i></div>
+        <h3 class="sv-card-title">Commercial Security</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-cone-striped"></i></div>
+        <h3 class="sv-card-title">Construction Site Security</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-car-front"></i></div>
+        <h3 class="sv-card-title">Car Dealership Security</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-building"></i></div>
+        <h3 class="sv-card-title">High Rise Buildings</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-bag"></i></div>
+        <h3 class="sv-card-title">Shopping Center Security</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-house-x"></i></div>
+        <h3 class="sv-card-title">Vacant Properties Security Services</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-sun"></i></div>
+        <h3 class="sv-card-title">Solar Farm Security</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-calendar2-event"></i></div>
+        <h3 class="sv-card-title">Event Security Services</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-box-seam"></i></div>
+        <h3 class="sv-card-title">Warehouse Security Services</h3>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2">
+      <div class="sv-card motion-card">
+        <div class="sv-card-icon"><i class="bi bi-capsule"></i></div>
+        <h3 class="sv-card-title">Dispensary Security Services</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center mt-4 motion-fade">
+    <a href="#" class="btn sv-btn-accent px-4 py-2">View Industries</a>
+  </div>
+  </div>
+</section>
+
+
+<section class="sv-why2 container py-5">
+  <header class="text-center mb-4">
+    <h2 class="svw-title">WHY CHOOSE AMERICAN GLOBAL SECURITY GUARD COMPANY</h2>
+    <p class="svw-sub">Our experience in a wide range of industries ensures that our clients get the best results.</p>
+  </header>
+
+  <div class="svw-rail mx-auto">
+    <!-- Stripe 1 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-file-earmark-x"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">NO LONG TERM CONTRACT</h3>
+        <p>Our security guard services in LA are available on a “trial basis.” No long term commitment is required! Our security solutions are customized.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 2 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-shield-check"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">FULLY TRAINED SECURITY GUARDS</h3>
+        <p>American Global Security guards have passed a rigorous screening process, background checks, and drug testing, and received complete training. Learn More About Guard Training</p>
+      </div>
+    </div>
+
+    <!-- Stripe 3 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-patch-check"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">FULLY LICENSED, INSURED & BONDED</h3>
+        <p>American Global Security is fully Insured & Bonded. We carry an insurance policy that pays up to $1.5 Million (3,000,000.00) per occurrence in which it includes property damage, bodily injury, etc.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 4 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-clock-history"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">24/7 SECURITY GUARD SERVICES</h3>
+        <p>We use PatrolLIVE Service, which sends our security guard's LIVE location and performance immediately to you. We also believe in communication & 24/7 availability to take your call.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 5 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-headset"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">24/7 DISPATCH</h3>
+        <p>American Global Security guards have passed a rigorous screening process, background checks, and drug testing, and received complete training.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 6 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-lightning-charge"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">DEDICATION</h3>
+        <p>Our staff and security professionals are dedicated to protecting you, your family, your property, and your assets.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 7 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-person-gear"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">PROFESSIONAL OFFICE MANAGEMENT & STAFF</h3>
+        <p>American Global Security provides professional service your satisfaction. Our work is always done in a timely manner and we are available 24/7 to meet your needs.</p>
+      </div>
+    </div>
+
+    <!-- Stripe 8 -->
+    <div class="svw-stripe motion-stripe">
+      <div class="svw-bullet"></div>
+      <div class="svw-chip"><i class="bi bi-sliders2"></i></div>
+      <div class="svw-text">
+        <h3 class="svw-h">PERSONALIZED SECURITY SERVICE</h3>
+        <p>We also provide a customized security plan based on your requirements. While we use your requirements, we train our selected guards who will then meet your expectations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5" id="testimonials">
+  <header class="text-center mb-4">
+    <h2 class="fw-800 text-light">Read Our Testimonials</h2>
+    <p class="text-secondary mb-0">More than 45+ Years - American Global Security, Inc. has been protecting
+      businesses, employees, local community & loved ones.</p>
+  </header>
+
+  <div class="swiper sv-testi">
+    <div class="swiper-wrapper">
+
+      <!-- Slide -->
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-google">Google</span>
+          </div>
+          <p class="sv-quote">
+            <strong>HIGHLY RECOMMENDED SECURITY COMPANY</strong> American Global is a highly recommended security
+            company, It's amazing how they're always able to overcome any obstacle thrown their way, whether its
+            homeless people in the property, theft, vandalism or any case of emergency…
+          </p>
+          <div class="sv-author">— <strong>Linda Manor</strong> <span class="text-secondary">(Local Guide)</span></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-yelp">Yelp</span>
+          </div>
+          <p class="sv-quote">
+            <strong>BEST GUARD SERVICES….</strong> Best Security guard services in Los Angeles Reasonable prices and
+            guaranteed services I would love to hire them again for my birthday. Johny was very nice guy- on time Professional
+          </p>
+          <div class="sv-author">— <strong>John</strong></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-generic">Review</span>
+          </div>
+          <p class="sv-quote">
+            <strong>FABULOUS SECURITY …</strong> It is fabulous security company in California. It provides best
+            security services faithfully and properly. The owner of this security company Simon is very respectful,
+            loyal and hard working guy too. Everyone is happy from his security services. Wish him best luck and all successes in his life.
+          </p>
+          <div class="sv-author">— <strong>Hotak Khan</strong></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-google">Google</span>
+          </div>
+          <p class="sv-quote">
+            AGS is an unique security guard service provider company that is professional and responsible, with reaction
+            times that are quite quick. This company will meet and exceed your expectations if you are seeking for commercial
+            or residential security for your business, buildings, or anything else.
+          </p>
+          <div class="sv-author">— <strong>Sherrie Berry</strong></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-yelp">Yelp</span>
+          </div>
+          <p class="sv-quote">
+            These guys are super professional! Their two military trained guards came promptly on time and were ready to work.
+            They stood like statues at their posts all evening… If you want professional service for your wedding, social event,
+            or estate sale, I would definitely recommend these guys! Thank you AGS
+          </p>
+          <div class="sv-author">— <strong>Manoj S.</strong></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-google">Google</span>
+          </div>
+          <p class="sv-quote">
+            My organization has recently needed the help of a security patrol service… they sent us an off-duty security officer
+            to keep an eye on things for us for a whole week. their guards were quite competent, and we felt safe the entire week…
+          </p>
+            <div class="sv-author">— <strong>Christopher Synder</strong></div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+        <article class="sv-card h-100">
+          <div class="sv-meta">
+            <span class="sv-badge sv-yelp">Yelp</span>
+          </div>
+          <p class="sv-quote">
+            If you are looking for Security Guard Services then AGS is who you should contact. Their professionalism is at its finest.
+            They were the only one… able to provide same day service with reasonable prices… Very reliable!
+          </p>
+          <div class="sv-author">— <strong>Kalipse H.</strong></div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Pagination + Nav -->
+    <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-button-prev" aria-label="Previous"></div>
+    <div class="swiper-button-next" aria-label="Next"></div> -->
+  </div>
+</section>
+
+<!-- Areas We Serve | Bootstrap + sv-card -->
+<section class="areas-serve py-5" style="background: linear-gradient(180deg,#0A1D3A 0%, #0b2247 100%);">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center text-white mb-4">
+      <span class="badge rounded-pill px-3 py-2 fw-semibold" style="background:#E79D1B; color:#0A1D3A;">45+ Years of Protection</span>
+      <h2 class="mt-3 mb-2 fw-bold">Areas We Serve</h2>
+For 45+ years, American Global Security has been a leading security guard company in Los Angeles, providing professional security services throughout California. Our team is highly trained and equipped to handle various security needs, from corporate sectors to event security. We are committed to ensuring the safety and protection of our clients with tailored solutions that meet specific requirements. Whether commercial, residential, or industrial security, we have the experience and resources to deliver reliable services. Our security guards company proudly provides 24/7 security guard services in Los Angeles and the following areas in California.
+      </p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+            <img src="./images/Design-4-Map-1016x1024.webp" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 flex-grow-1">
+            <!-- Grid -->
+        <div class="row g-3 g-md-4">
+        <!-- Card: Los Angeles -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/los-angeles-security-guard-services" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hiddenn" style="background-image: url('./images/los-angeles-2-1.webp'); background-size: cover; background-repeat: no-repeat;">
+                                <h3 class="h5 mb-0 text-white shadow-sm">Los Angeles</h3>
+                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: San Diego -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-san-diego" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/san-diego.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">San Diego</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: Orange County -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-orange-county" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/orange-county.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">Orange County</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: Riverside County -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-riverside" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/riverside-ca-security-2.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">Riverside County</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: Ventura County -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-ventura-county" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/ventura.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">Ventura County</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: San Bernardino -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-san-bernardino" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/san-bernardino-security.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">San Bernardino</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: San Francisco Bay Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-san-francisco-bay-area" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/bay-area-security.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">San Francisco Bay Area</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: Sacramento -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-sacramento" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/san-bernardino-security-1.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">Sacramento</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <!-- Card: Fresno -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a href="/security-guard-services-fresno-county" class="text-decoration-none">
+            <div class="sv-card h-100 p-4 rounded-4 position-relative overflow-hidden" style="background-image: url('./images/fresno-security.webp'); background-size: cover; background-repeat: no-repeat;">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="h5 mb-0 text-white">Fresno</h3>
+                                  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background:rgba(0,0,0,0.55); z-index:-1;"></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        </div>
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <a href="#more-areas" class="btn btn-lg fw-semibold" style="background:#E79D1B; color:#0A1D3A; border:none;">
+        View More Locations →
+        </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-split py-5 position-relative overflow-hidden" style="background:#0A1D3A;">
+  <!-- angled accent -->
+  <span class="cta-accent d-none d-md-block"></span>
+
+  <div class="container position-relative">
+    <div class="row align-items-center gy-4">
+      <!-- Left: Call Us -->
+      <div class="col-lg-6">
+        <div class="call-panel p-4 p-md-5 rounded-4 position-relative">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="spark"></span>
+            <p class="text-uppercase fw-semibold mb-0" style="color:#E79D1B; letter-spacing:.08em;">
+              Not Sure What You Need?
+            </p>
+          </div>
+
+          <h2 class="display-6 fw-bold text-white mb-2">Speak to a Security Specialist</h2>
+          <p class="text-white-50 mb-4">
+            Tell us your situation—commercial, residential, or events—and we'll recommend the right protection plan in minutes.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+            <a href="tel:+18774827343" class="btn btn-lg px-4 cta-call-btn">
+              <i class="bi bi-telephone-inbound me-2"></i> Call Now
+            </a>
+
+            <a href="tel:+18774827343" class="link-light text-decoration-none fs-4 fw-bold phone-link">
+              +1&nbsp;877-482-7343
+            </a>
+          </div>
+
+          <!-- subtle decorative lines -->
+          <div class="glow-line glow-1"></div>
+          <div class="glow-line glow-2"></div>
+        </div>
+      </div>
+
+      <!-- Right: Subscribe -->
+      <div class="col-lg-6">
+        <div class="subscribe-panel p-4 p-md-5 rounded-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="bi bi-envelope-paper text-warning"></i>
+            <p class="text-uppercase fw-semibold mb-0" style="color:#E79D1B; letter-spacing:.08em;">
+              Sign up for emails
+            </p>
+          </div>
+
+          <h3 class="h2 text-white fw-bold mb-2">Security Tips & Updates</h3>
+          <p class="text-white-50 mb-4">Monthly insights, incident checklists, and best practices—no spam.</p>
+
+          <form class="row g-2 g-sm-3" onsubmit="return false">
+            <div class="col-12 col-sm-8">
+              <div class="form-floating">
+                <input type="email" class="form-control form-control-lg cta-input" id="emailSub" placeholder="name@example.com" required>
+                <label for="emailSub" class="text-muted">Your email here</label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 d-grid">
+              <button type="submit" class="btn btn-lg cta-subscribe-btn">
+                Subscribe Now
+              </button>
+            </div>
+            <div class="col-12">
+              <small class="text-white-50 d-block mt-1">
+                By subscribing, you agree to our <a href="#" class="link-warning text-decoration-none">Privacy Policy</a>.
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section-pad" id="cases">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="section-title">Our latest blogs</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><div class="card sv-card h-100 p-3 reveal">
+          <img class="rounded mb-3" src="./images/Private-Security-Guards-For-Hire-San-Diego-CA.webp" alt="Data Center">
+          <h5>Where to Find Private Security Guards For Hire in San Diego, CA</h5>
+          <span class="badge text-bg-dark border">View Post</span>
+        </div></div>
+
+        <div class="col-md-6 col-lg-4"><div class="card sv-card h-100 p-3 reveal">
+          <img class="rounded mb-3" src="./images/Hire-Mobile-Patrol-Security-Services-in-Sacramento.webp" alt="Retail Chain">
+          <h5>Why Hire Mobile Patrol Security Services in Sacramento, CA?</h5>
+          <span class="badge text-bg-dark border">View Post</span>
+        </div></div>
+
+        <div class="col-md-6 col-lg-4"><div class="card sv-card h-100 p-3 reveal">
+          <img class="rounded mb-3" src="./images/Healthcare-Security-Guards-for-Hospitals-and-Medical-Centers.webp" alt="Construction Site">
+          <h5>Hire Professional Healthcare Security Guards for Hospitals and Medical Centers</h5>
+          <span class="badge text-bg-dark border">View Post</span>
+        </div></div>
+      </div>
+        <div class="d-flex justify-content-center mt-4">
+        <a href="#more-areas" class="btn btn-lg fw-semibold" style="background:#E79D1B; color:#0A1D3A; border:none;">
+        View All Posts
+        </a>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+<section class="faq-section py-5" style="background:#0A1D3A;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-white">Frequently Asked Questions</h2>
+      <p class="text-white-50 mb-0">Answers to the most common questions about our security services in Los Angeles and across California.</p>
+    </div>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- Q1 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1" style="background:#0A1D3A; color: white;">
+            Are your security guards licensed in the state of California?
+          </button>
+        </h2>
+        <div id="answer1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="background:rgba(255,255,255,0.05);">
+            Yes, all our security guards hold valid California BSIS licenses, ensuring they meet state training, certification, and compliance requirements to deliver safe, reliable, and professional protection services in Los Angeles.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
+            Can I get a free security consultation before hiring?
+          </button>
+        </h2>
+        <div id="answer2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            Yes, we provide complimentary on-site security consultations, evaluating risks and recommending tailored solutions that align with your location’s vulnerabilities, operational needs, and budget for maximum safety.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
+            Do you offer both armed & unarmed security guard services?
+          </button>
+        </h2>
+        <div id="answer3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            Yes, we provide both armed & unarmed security guards in Los Angeles and several other cities in California, tailored to your site’s risks, security requirements, and budget for effective, customized protection at all times.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
+            How much does it cost to hire a security guard company in Los Angeles?
+          </button>
+        </h2>
+        <div id="answer4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            The cost of hiring a security guard company in Los Angeles depends on several factors, including the level of training, whether their guards are armed or unarmed, required hours, location, and duration of service. Request a free security quote now!
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer5" aria-expanded="false" aria-controls="answer5">
+            Are your security guards background checked?
+          </button>
+        </h2>
+        <div id="answer5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            Yes, all guards undergo thorough background checks, drug screenings, & reference verifications to ensure that only trustworthy professionals are deployed for the client's safety and security.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer6" aria-expanded="false" aria-controls="answer6">
+            Why should I hire a Los Angeles security guard company instead of relying only on technology?
+          </button>
+        </h2>
+        <div id="answer6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            Technology supports safety but cannot replace human judgment, observation, and intervention. Security guards provide immediate response, deterrence, and adaptability to unpredictable threats.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer7" aria-expanded="false" aria-controls="answer7">
+            What makes AGS different from other security guard companies in Los Angeles?
+          </button>
+        </h2>
+        <div id="answer7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+          <div class="accordion-body ">
+            We combine advanced technology, skilled security personnel, and customized security plans. Our proven experience, reliable service, and commitment to client safety set us apart from other security companies in Los Angeles.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- OUR CLIENTS -->
+<section class="clients-section py-5 position-relative overflow-hidden" style="background:linear-gradient(180deg,#07152B 0%, #0A1D3A 100%);">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill px-3 py-2 fw-semibold" style="background:#E79D1B; color:#0A1D3A;">Trusted by Leading Brands</span>
+      <h2 class="mt-3 fw-bold text-white">OUR CLIENTS</h2>
+      <p class="text-white-50 mb-0">Proudly partnering with leading organizations across industries.</p>
+    </div>
+
+    <!-- Gold accent divider -->
+    <div class="clients-divider mx-auto my-4"></div>
+
+    <!-- Client Grid -->
+    <div class="row g-4 justify-content-center align-items-center mt-4">
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/lionakis.webp" alt="Lionakis Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/milgard.webp" alt="Milgard Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/peninsula.webp" alt="The Peninsula Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/sls.webp" alt="SLS Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/tesla.webp" alt="Tesla Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <div class="client-logo-box p-3 rounded-4">
+          <img src="./images/6-motels-in-usa-for-best-stay-1.jpg.webp" alt="Motel 6 Logo" class="img-fluid client-logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- soft glow accents -->
+  <!-- <span class="clients-glow glow-top"></span>
+  <span class="clients-glow glow-bottom"></span> -->
+</section>
+
+<section class="map-section py-5 position-relative overflow-hidden" style="background:linear-gradient(180deg,#07152B 0%, #0A1D3A 100%);">
+  <div class="container text-center mb-4">
+    <span class="badge rounded-pill px-3 py-2 fw-semibold" style="background:#E79D1B; color:#0A1D3A;">Find Us</span>
+    <h2 class="mt-3 fw-bold text-white">Our Location</h2>
+    <p class="text-white-50 mb-0">Visit our office or contact us for professional security services across California.</p>
+  </div>
+
+  <!-- Map Wrapper -->
+  <div class="map-container mx-auto my-4 rounded-4 overflow-hidden">
+    <!-- Replace src URL with your business location embed -->
+    <iframe
+      src="https://www.google.com/maps/d/embed?mid=1h6FA0Yqhx9zrBvZ4Uj4B9BB3oRVLKIM&amp;ehbc=2E312F"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- soft gold glow accents -->
+  <span class="map-glow glow-top"></span>
+  <span class="map-glow glow-bottom"></span>
+</section>
+
+
+  <!-- =========================
+     FOOTER
+  ==========================-->
+
+
+  <footer class="py-5" id="contact" style="background:linear-gradient(180deg,#07152B 0%, #0A1D3A 100%);">
+  <div class="container text-white">
+    <div class="row g-4">
+      
+      <!-- Column 1: Our Company -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-warning">Our Company</h5>
+        <ul class="list-unstyled text-secondary mb-0">
+          <li><a class="text-decoration-none text-secondary" href="#">About</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">News & Blog</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Join Team</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Contact Us</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Sitemap</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">License #120021</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">PPB #6792</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">PPB #6797</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Services -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-warning">Services</h5>
+        <ul class="list-unstyled text-secondary mb-0">
+          <li><a class="text-decoration-none text-secondary" href="#">Fire Watch Security Guards</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Foot, Bike, and Golf Patrol</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Vehicle Patrol Security Guards</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Standing Guard</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Unarmed Security Guards</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Armed Security Guards</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Private Security Services</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Parking Enforcement</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Traffic Control Security</a></li>
+          <li><a class="text-decoration-none text-secondary" href="#">Crossing Guard Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Get in Touch -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-warning">Get in Touch</h5>
+        <p class="text-secondary mb-1">9410 Topanga Canyon Blvd Ste 203<br>Chatsworth, CA 91311</p>
+        <p class="text-secondary mb-1">3105 Fite Cir Ste. 106<br>Sacramento, CA 95827</p>
+        <p class="text-secondary mb-1">4505 Allstate Dr. Ste #210<br>Riverside, CA 92501</p>
+        <p class="text-secondary mb-1"><i class="bi bi-telephone me-2"></i>(877) 482-7343</p>
+        <p class="text-secondary mb-0"><i class="bi bi-clock me-2"></i>24/7/365</p>
+      </div>
+
+      <!-- Column 4: Newsletter -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-warning">Newsletter</h5>
+        <p class="text-secondary small">Receive resources & tools that can help you prepare for the future. You can cancel anytime.</p>
+        <form class="d-flex gap-2">
+          <input type="email" class="form-control" placeholder="Your Mail Here">
+          <button class="btn btn-warning text-dark fw-semibold" type="button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center text-secondary mt-4 border-top pt-3">
+      &copy; <span id="year"></span> American Global Security, Inc. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- BOTTOM INFO SECTION -->
+<section class="py-4" style="background:#061225; color:#adb5bd;">
+  <div class="container">
+<!-- Service Areas -->
+<div class="text-center py-3">
+  <h6 class="text-warning fw-semibold mb-2 text-uppercase" style="letter-spacing:1px;">
+    Service Areas
+  </h6>
+  <p class="text-secondary small mb-0 px-3" style="max-width: 900px; margin:auto; line-height:1.8;">
+    <span class="text-white-50">Los Angeles</span> • 
+    <span class="text-white-50">Orange County</span> • 
+    <span class="text-white-50">Riverside County</span> • 
+    <span class="text-white-50">Fresno County</span> • 
+    <span class="text-white-50">Bakersfield</span> • 
+    <span class="text-white-50">Ventura County</span> • 
+    <span class="text-white-50">San Diego County</span> • 
+    <span class="text-white-50">San Bernardino</span> • 
+    <span class="text-white-50">Sacramento</span> • 
+    <span class="text-white-50">San Francisco Bay Area</span> • 
+    <span class="text-white-50">Lancaster</span> • 
+    <span class="text-white-50">Long Beach</span> • 
+    <span class="text-white-50">Stockton</span> • 
+    <span class="text-white-50">Los Angeles County</span>
+  </p>
+</div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Legal Notice -->
+    <div class="text-center mb-3 small">
+      <p class="mb-1">All Rights Reserved by <strong>American Global Security, Inc.</strong></p>
+      <p class="mb-0 fst-italic">
+        Any illegal reproduction of American Global Security, Inc’s website and its content will result in immediate legal action.
+      </p>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Social & Certification Logos -->
+    <div class="row justify-content-center align-items-center text-center g-2">
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-envelope"></i> Email</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-facebook"></i> Facebook</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-instagram"></i> Instagram</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-twitter-x"></i> Twitter</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-yelp"></i> Yelp</a>
+      </div>
+      <div class="col-auto">
+        <a href="#" class="text-decoration-none text-warning small me-2"><i class="bi bi-youtube"></i> YouTube</a>
+      </div>
+    </div>
+
+    <!-- Brand Certifications -->
+    <div class="text-center mt-4 small">
+      <span class="d-inline-block mx-2">BBB Accredited Business</span> •
+      <span class="d-inline-block mx-2">BSIS</span> •
+      <span class="d-inline-block mx-2">SSL Secure Connection</span> •
+      <span class="d-inline-block mx-2">California Republic</span> •
+      <span class="d-inline-block mx-2">Business Consumer Alliance</span> •
+      <span class="d-inline-block mx-2">CALSAGA</span>
+    </div>
+
+    <!-- Reviews -->
+    <div class="text-center mt-2 small text-secondary">
+      <span class="d-inline-block mx-2">Facebook Review</span> •
+      <span class="d-inline-block mx-2">Google Review</span> •
+      <span class="d-inline-block mx-2">Yelp Review</span>
+    </div>
+  </div>
+</section>
+
+
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border border-warning rounded-4 shadow-lg">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="quoteModalLabel">Request a Quote</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form class="row g-3">
+          <!-- 24/7 Service Note -->
+          <div class="col-12 text-warning fw-semibold mb-2">
+            <i class="bi bi-clock-history me-1"></i> 24 × 7 Service Available
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Company Name</label>
+            <input type="text" class="form-control" placeholder="Enter company name">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="+971 5X XXXXXXX" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Select Services</label>
+            <select class="form-select">
+              <option selected disabled>Select service</option>
+              <option>On-site Security Teams</option>
+              <option>CCTV & Monitoring</option>
+              <option>Access Control Systems</option>
+              <option>Cybersecurity / SOC</option>
+              <option>Risk Consulting</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Type of Facility</label>
+            <select class="form-select">
+              <option selected disabled>Select type</option>
+              <option>Corporate Office</option>
+              <option>Retail / Mall</option>
+              <option>Industrial / Construction</option>
+              <option>Residential Complex</option>
+              <option>Event Venue</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Select Area</label>
+            <select class="form-select">
+              <option selected disabled>Select area</option>
+              <option>Dubai</option>
+              <option>Abu Dhabi</option>
+              <option>Sharjah</option>
+              <option>Ajman</option>
+              <option>Other (UAE)</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Duration of Service</label>
+            <select class="form-select">
+              <option selected disabled>Select duration</option>
+              <option>1 Month</option>
+              <option>3 Months</option>
+              <option>6 Months</option>
+              <option>1 Year</option>
+              <option>Ongoing Contract</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="3" placeholder="Add any additional information..."></textarea>
+          </div>
+
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-accent px-4 py-2">Start Security Services Today</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- =========================
+       SCRIPTS
+  ==========================-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Motion One -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@10.16.4/dist/motion.min.js"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script>
+      const testiSwiper = new Swiper('.sv-testi', {
+    loop: true,
+    speed: 550,
+    
+    grabCursor: true,
+    autoHeight: true,
+    spaceBetween: 18,
+    slidesPerView: 1,
+    centeredSlides: false,
+    autoplay: { delay: 6000, disableOnInteraction: false },
+    pagination: { el: '.sv-testi .swiper-pagination', clickable: true, dynamicBullets: true },
+    // navigation: { nextEl: '.sv-testi .swiper-button-next', prevEl: '.sv-testi .swiper-button-prev' },
+    navigation: false,
+    breakpoints: {
+      768:  { slidesPerView: 2, spaceBetween: 20 },
+      1200: { slidesPerView: 3, spaceBetween: 22 }
+    }
+  });
+    // ========= Helpers
+    const { animate, stagger, inView } = Motion;
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.dropdown-menu').forEach(el => {
+      el.addEventListener('click', e => e.stopPropagation());
+    });
+
+    const nav = document.querySelector('.navbar');
+    const onScroll = () => (window.scrollY > 8) ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+    window.addEventListener('scroll', onScroll); onScroll();
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".motion-fade");
+        Motion.animate(
+        cards,
+        { opacity: [0, 1], y: [50, 0] },
+        {
+            duration: 0.8,
+            delay: Motion.stagger(0.2),
+            easing: "ease-out",
+            viewport: { once: true, amount: 0.2 } // triggers on scroll-in
+        }
+        );
+
+          const sections = document.querySelectorAll("section");
+            Motion.animate(
+                sections,
+                { opacity: [0, 1], y: [50, 0] },
+                {
+                duration: 0.8,
+                delay: Motion.stagger(0.15),
+                easing: "ease-out",
+                viewport: { once: true, amount: 0.25 }
+                }
+            );
+
+
+                const { animate, stagger, inView } = Motion;
+
+        // Fade up heading, paras, CTA
+        animate(
+        document.querySelectorAll(".sv-industries .motion-fade"),
+        { opacity: [0, 1], y: [24, 0] },
+        { duration: 0.6, delay: stagger(0.15), easing: "ease-out", viewport: { once: true, amount: 0.25 } }
+        );
+
+        // Stagger cards when grid enters viewport
+        inView(".sv-industries .row", ({ target }) => {
+        const cards = target.querySelectorAll(".motion-card");
+        animate(cards, { opacity: [0, 1], y: [32, 0] }, { duration: 0.6, delay: stagger(0.08), easing: "ease-out" });
+        });
+
+        animate(
+        document.querySelectorAll('.sv-why-title, .sv-why-sub'),
+        { opacity: [0,1], y: [20,0] },
+        { duration: 0.6, delay: stagger(0.12), easing: 'ease-out', viewport: { once: true, amount: 0.3 } }
+        );
+
+        animate(
+        document.querySelectorAll('.svw-title, .svw-sub'),
+        { opacity: [0,1], y: [18,0] },
+        { duration: .55, delay: stagger(.12), easing: 'ease-out', viewport: { once: true, amount: .3 } }
+        );
+
+        // Stripes stagger on first view
+        inView('.svw-rail', ({ target }) => {
+        const stripes = target.querySelectorAll('.motion-stripe');
+        animate(stripes, { opacity: [0,1], y: [22,0] }, { duration: .5, delay: stagger(.06), easing: 'ease-out' });
+
+        // Pop the bullets slightly
+        const bullets = target.querySelectorAll('.svw-bullet');
+        animate(bullets, { scale: [0.85, 1] }, { duration: .45, delay: stagger(.06) });
+        });
+    });
+    // Custom cursor
+    const cursor = document.getElementById('svCursor');
+    if (cursor && window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+      let x = window.innerWidth/2, y = window.innerHeight/2;
+      const move = e => { x = e.clientX; y = e.clientY; };
+      const render = () => { cursor.style.transform = `translate(${x}px, ${y}px)`; requestAnimationFrame(render); };
+      window.addEventListener('mousemove', move); render();
+      document.querySelectorAll('a, button, .btn, .card, .nav-link').forEach(el=>{
+        el.addEventListener('mouseenter', ()=> cursor.classList.add('sv-grow'));
+        el.addEventListener('mouseleave', ()=> cursor.classList.remove('sv-grow'));
+      });
+      window.addEventListener('mousedown', ()=> cursor.classList.add('sv-grow'));
+      window.addEventListener('mouseup',   ()=> cursor.classList.remove('sv-grow'));
+      window.addEventListener('mouseleave',()=> cursor.style.opacity = 0);
+      window.addEventListener('mouseenter',()=> cursor.style.opacity = .85);
+    } else { cursor && cursor.remove(); }
+
+    // ========= Motion One Animations
+
+    // Desktop: Tabbed mega dropdown (Solutions)
+    document.querySelectorAll('.nav-center .nav-item.dropdown').forEach((item) => {
+      const toggle = item.querySelector('[data-bs-toggle="dropdown"]');
+      const menu   = item.querySelector('.dropdown-menu');
+
+      // Open
+      item.addEventListener('show.bs.dropdown', () => {
+        menu.style.opacity = 0;
+        menu.style.transform = 'translateY(14px)';
+        animate(menu, { opacity: 1, transform: 'translateY(0)' }, { duration: 0.22, easing: 'ease-out' });
+
+        const lis = menu.querySelectorAll('ul li, .dropdown-item');
+        if (lis.length){
+          animate(lis, { opacity: [0,1], y: [8,0] }, { delay: stagger(0.03), duration: 0.2, easing: 'ease-out' });
+        }
+      });
+
+      // Close (animate then finish)
+      item.addEventListener('hide.bs.dropdown', (e) => {
+        e.preventDefault();
+        animate(menu, { opacity: [1,0], y: [0,8] }, { duration: 0.16, easing: 'ease-in' })
+          .finished.then(() => {
+            item.classList.remove('show');
+            menu.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.removeAttribute('data-popper');
+          });
+      });
+    });
+
+
+    // Mobile: offcanvas dropdowns
+    document.querySelectorAll('#mobileMenu .nav-item.dropdown').forEach((item) => {
+      const toggle = item.querySelector('[data-bs-toggle="dropdown"]');
+      const menu   = item.querySelector('.dropdown-menu');
+
+      item.addEventListener('show.bs.dropdown', () => {
+        menu.style.opacity = 0;
+        menu.style.transform = 'translateY(10px)';
+        animate(menu, { opacity: 1, transform: 'translateY(0)' }, { duration: 0.2, easing: 'ease-out' });
+        const links = menu.querySelectorAll('.dropdown-item');
+        animate(links, { opacity: [0,1], y: [6,0] }, { delay: stagger(0.025), duration: 0.18 });
+      });
+
+      item.addEventListener('hide.bs.dropdown', (e) => {
+        e.preventDefault();
+        animate(menu, { opacity: [1,0], y: [0,6] }, { duration: 0.14, easing: 'ease-in' })
+          .finished.then(() => {
+            item.classList.remove('show');
+            menu.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.removeAttribute('data-popper');
+          });
+      });
+    });
+
+    // Hero content entrance
+    inView('.hero .content', ({ target }) => {
+      const kids = target.children;
+      animate(kids, { opacity: [0,1], y: [10,0] }, { delay: stagger(0.06), duration: 0.32, easing: 'ease-out' });
+    });
+
+    // Reveal-on-scroll utility (for .reveal elements)
+    inView('.reveal', ({ target }) => {
+      animate(target, { opacity: [0,1], y: [18,0] }, { duration: 0.32, easing: 'ease-out' });
+    }, { margin: '0px 0px -10% 0px' });
+  </script>
+</body>
+</html>
